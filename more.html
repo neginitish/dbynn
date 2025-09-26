@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work - More Work</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="assets/site.webmanifest" />
+</head>
+<body>
+  <div id="loader" class="loader hidden">
+  <div class="snake-loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-content">
+        <a href="index.html"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed7cbefd86ef16c5444fd0c5e3d76b7bc77e7794?placeholderIfAbsent=true" alt="dbynn logo" class="logo" /></a>
+       
+      </div>
+    </div>
+  </header>
+
+<div class="viewji">  
+ <div class="viewji-container">
+  <a href="inspare.html" class="selected" tabindex="0">Back Previous</a>
+  <h2 class="section-title">More Work</h2>
+  <a href="gig-worker.html" class="selected" tabindex="0">See Next</a>
+</div>
+  <div class="iframe-container">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/lNiNAGZKUEAVfl2fJE51JL/My-Work?page-id=327%3A3863&node-id=327-3864&viewport=535%2C45%2C0.07&scaling=scale-down-width&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+  </div>
+</div>
+ 
+
+<div class="mobile-warning">
+  <div class="mobile-warning-box">
+    <p><strong>Hey there, tiny screen explorer! 👀</strong><br>
+    My portfolio loves the big stage — try it on a tablet or desktop for the full experience. </p>
+  </div>
+</div>
+  <script src="nav.js"></script>
+</body>
+
+<footer>
+  <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.getElementById("loader");
+
+    document.querySelectorAll('a[href]').forEach(link => {
+      // Exclude external links and anchor links
+      if (link.hostname === window.location.hostname && !link.href.includes("#")) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = this.href;
+
+          // Show loader
+          loader.classList.remove("hidden");
+
+          // Wait 5 seconds, then redirect
+          setTimeout(() => {
+            window.location.href = href;
+          }, 5000);
+        });
+      }
+    });
+  });
+    </script>
+</footer>
+
+</html>
